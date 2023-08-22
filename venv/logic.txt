@@ -1,0 +1,18 @@
+Assume there is a Hospital, 
+with multiple departments and each department has 1 or more doctors. 
+You need to create a web based token system for visitors based on this information.
+
+Requirements:
+There should be 2 endpoints(portal) in this system 1. one visitor's end(portal) and   2. other hospital end(portal).
+
+In Visitor's end -
+   * users should be able to select a department (not doctor) and create appointments. 
+   * Just name, and mobile number input is enough to create an appointment. Use POST requests for input.
+   * When a user creates an appointment they should be assigned with a token starting from 1, until a predefined capacity. 
+     If a department have more than 1 doctor, appointments should be equally distributed among those doctors.
+
+In the Hospital end -
+   * you should show a list of appointments. Search option by name or mobile number should be there.
+   * also option to group appointments by doctor.
+   
+You can use any backend framework like Django or flask. You can tweak the front end if you have time. Otherwise not necessary.
